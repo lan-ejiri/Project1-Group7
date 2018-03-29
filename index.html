@@ -2,23 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
 
-    <title>Document</title>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Document</title>
 </head>
 
 <body>
-    <div id="testItemsGoHere"></div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-6">
+
+
+        <div>
+          <img class="mySlides" src="https://www.socialsamosa.com/wp-content/uploads/2016/08/beach.jpg">
+          <img class="mySlides" src="http://focuspos.com/wp-content/uploads/2014/05/bigstock-Happy-friends-drinking-beer-at-45992998.jpg">
+          <img class="mySlides" src="https://ak6.picdn.net/shutterstock/videos/10533626/thumb/1.jpg">
+          <img class="mySlides" src="https://call2actionvideoclips.com/wp-content/uploads/Restaurant-Couple-Cheers1.jpg">
+        </div>
+
+      </div>
+      <div class="col-xs-6">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Login</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <label for="fname">username</label>
+              <input type="text" id="username" name="fname">
+              <label for="lname">password</label>
+              <input type="text" id="password" name="lname">
+              <button type="submit">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+
+          <img src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg">
+
+        </div>
+
+        <div class="col-xs-6">
+
+
+          <img id="user-img" src="https://openclipart.org/image/2400px/svg_to_png/211821/matt-icons_preferences-desktop-personal.png">
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<!-- javascript -->
+<script type="text/javascript" src="app.js"></script>
 
 </html>
