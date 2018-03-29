@@ -39,6 +39,7 @@ input {
   border-radius: 50px;
 }
 
+<<<<<<< HEAD
 #img {
   height: 300px;
   width: 350px;
@@ -72,4 +73,80 @@ input {
   font-size: 20px;
   color: white;
   margin-top: 20px;
+=======
+
+
+/* ________________________________________________________ */
+
+/* user profile styling */
+
+.user-profile {
+  background-color: #FFF;
+  width: 300px;
+  border: 10px solid;
+  border-color: #FFBB00;
+  padding: 25px;
+  margin: 25px;
 }
+
+.username {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FC4349;
+>>>>>>> master
+}
+
+.user-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2C3E50;
+}
+
+
+/* login form styling */
+
+form {
+  background-color: #FFF;
+  border: 10px solid #FFBB00;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #2C3E50;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #FC4349;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+/*COLORS
+navy blue: #2C3E50
+red: #FC4349
+orange: #FFBB00
+teal: #3CDBBC */
