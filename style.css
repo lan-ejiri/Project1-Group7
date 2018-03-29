@@ -39,7 +39,6 @@ input {
   border-radius: 50px;
 }
 
-<<<<<<< HEAD
 #img {
   height: 300px;
   width: 350px;
@@ -73,8 +72,7 @@ input {
   font-size: 20px;
   color: white;
   margin-top: 20px;
-=======
-
+}
 
 /* ________________________________________________________ */
 
@@ -94,7 +92,6 @@ input {
   font-size: 20px;
   font-weight: bold;
   color: #FC4349;
->>>>>>> master
 }
 
 .user-description {
