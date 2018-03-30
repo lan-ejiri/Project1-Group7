@@ -55,6 +55,7 @@ h3 {
   opacity: 1;
   background-color: rgb(204, 33, 33);
 }
+
 .box {
   position: relative;
   height: 300px;
@@ -86,6 +87,7 @@ h4 {
   font-size: 30px;
   text-align: center;
 }
+
 span {
   color: #0ac;
 }
@@ -102,6 +104,7 @@ h2 {
   /* margin-bottom: 20px;
   margin-top: 20px; */
 }
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
@@ -110,6 +113,7 @@ h2 {
 .colMargin {
   margin: 60px 0px 60px 0px !important;
 }
+
 .mySlides {
   height: 760px;
   width: 1468px;
@@ -147,6 +151,7 @@ h2 {
   animation-name: slide;
   animation-duration: 3s;
 }
+
 @keyframes slide {
   0% {
     left: -10%;
@@ -176,7 +181,6 @@ h2 {
   color: white;
   margin-top: 20px;
 }
-/* ________________________________________________________ */
 
 /* user profile styling */
 
@@ -203,15 +207,49 @@ h2 {
   color: #2c3e50;
 }
 
+/* restaurant box styling */
+
+.restaurant-box {
+  background-color: #FFF;
+  width: 400px;
+  border: 10px solid;
+  border-color: #3CDBBC;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.restaurant-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FC4349;
+}
+
+.restaurant-type {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  color: #2C3E50;
+}
+
+.restaurant-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2C3E50;
+}
+
 /* login form styling */
 
 form {
   background-color: #fff;
-  border: 10px solid #ffbb00;
   border-radius: 10px;
   padding: 20px;
 }
 
+input[type="email"],
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -219,15 +257,16 @@ input[type="password"] {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #2c3e50;
-  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 button {
-  background-color: #fc4349;
+  background-color: #4CCF51;
   color: white;
   padding: 10px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   width: 100%;
 }
@@ -277,5 +316,97 @@ teal: #3CDBBC */
 
   #logo {
     display: none;
+  }
+}
+
+
+/* login modal */
+
+/* styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #FC4349;
+}
+
+/* Center the logo and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.modalcontainer {
+  padding: 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #FFF;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+          
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+      }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  }
+  .cancelbtn {
+  width: 100%;
   }
 }

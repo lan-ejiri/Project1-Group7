@@ -17,7 +17,7 @@
   <title>WeMeet!</title>
 </head>
 
-
+<body>
 <nav class="navbar navbar-default">
 
   <div class="container-fluid">
@@ -31,8 +31,6 @@
         <span class="icon-bar"></span>
       </button>
       <a id="wemeet" href="index.html">WeMeet!</a>
-
-
 
     </div>
     <!-- 
@@ -62,32 +60,49 @@
 </nav>
 <img id="logo" src="assets/images/Logo.png">
 
-
 <div>
   <img class="mySlides" src="http://ak6.picdn.net/shutterstock/videos/11457686/thumb/1.jpg">
   <img class="mySlides" src="http://focuspos.com/wp-content/uploads/2014/05/bigstock-Happy-friends-drinking-beer-at-45992998.jpg">
   <img class="mySlides" src="https://ak6.picdn.net/shutterstock/videos/10533626/thumb/1.jpg">
   <img class="mySlides" src="https://call2actionvideoclips.com/wp-content/uploads/Restaurant-Couple-Cheers1.jpg">
 
-
-
-
   <h1>Meeting New People,</h1>
 
   <h3> Making New Friends</h3>
 </div>
 
-<button onclick="location.href='login.html';" id="loginbtn">Login!</button>
+<!-- modal login button -->
 
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  id="loginbtn">Login</button>
 
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="assets/images/Logo.png" alt="WeMeet" width="360">
+      </div>
 
+      <div class="modalcontainer">
+      <label for="uname" id="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email Address" name="uname" required>
 
-</head>
+      <label for="psw" id="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit" id="login">Login</button>
+      <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+  </form>
+  </div>
 
-
-
-<body>
-
+  <!-- end modal -->
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
