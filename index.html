@@ -18,104 +18,144 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
 
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a id="wemeet" href="index.html">WeMeet!</a>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="wemeet" href="index.html">WeMeet!</a>
 
-    </div>
-    <!-- 
+        <!-- login button to apear on navbar for mobile displays -->
+
+        <button onclick="document.getElementById('id01').style.display='block'" id="login-button2">Login</button>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="assets/images/Logo.png" alt="WeMeet" width="150">
+            </div>
+
+            <div class="modalcontainer">
+              <label for="uname" id="email">
+                <b>Email</b>
+              </label>
+              <input type="email" placeholder="Enter Email Address" name="uname" required>
+
+              <label for="psw" id="password">
+                <b>Password</b>
+              </label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <div>
+                <button type="submit" id="login">Login</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+
+
+              <span class="psw">
+                <a href="#">Forgot password?</a>
+              </span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- 
       <h1>WeMeet!</h1> -->
 
 
 
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
 
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-        <li>
-          <a href="#">Sign Up</a>
-        </li>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.navbar-collapse -->
+    <!-- /.container-fluid -->
+  </nav>
+  <img id="logo" src="assets/images/Logo.png">
+
+  <div>
+    <img class="mySlides" src="http://ak6.picdn.net/shutterstock/videos/11457686/thumb/1.jpg">
+    <img class="mySlides" src="http://focuspos.com/wp-content/uploads/2014/05/bigstock-Happy-friends-drinking-beer-at-45992998.jpg">
+    <img class="mySlides" src="https://ak6.picdn.net/shutterstock/videos/10533626/thumb/1.jpg">
+    <img class="mySlides" src="https://call2actionvideoclips.com/wp-content/uploads/Restaurant-Couple-Cheers1.jpg">
+
+    <h1>Meeting New People</h1>
+
+    <h3> Making New Friends</h3>
   </div>
-  <!-- /.container-fluid -->
-</nav>
-<img id="logo" src="assets/images/Logo.png">
 
-<div>
-  <img class="mySlides" src="http://ak6.picdn.net/shutterstock/videos/11457686/thumb/1.jpg">
-  <img class="mySlides" src="http://focuspos.com/wp-content/uploads/2014/05/bigstock-Happy-friends-drinking-beer-at-45992998.jpg">
-  <img class="mySlides" src="https://ak6.picdn.net/shutterstock/videos/10533626/thumb/1.jpg">
-  <img class="mySlides" src="https://call2actionvideoclips.com/wp-content/uploads/Restaurant-Couple-Cheers1.jpg">
+  <!-- modal login button -->
 
-  <h1>Meeting New People,</h1>
-
-  <h3> Making New Friends</h3>
-</div>
-
-<!-- modal login button -->
-
+<<<<<<< HEAD
+  <button onclick="document.getElementById('id01').style.display='block'" id="login-button">Login</button>
+=======
 <button onclick="document.getElementById('id01').style.display='block'" id="loginbtn">Login</button>
+>>>>>>> master
 
   <div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
+
+    <form class="modal-content animate" action="/action_page.php">
       <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="assets/images/Logo.png" alt="WeMeet" width="360">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="assets/images/Logo.png" alt="WeMeet">
       </div>
 
       <div class="modalcontainer">
-      <label for="uname" id="email"><b>Email</b></label>
-      <input type="email" placeholder="Enter Email Address" name="uname" required>
+        <label for="uname" id="email">
+          <b>Email</b>
+        </label>
+        <input type="email" placeholder="Enter Email Address" name="uname" required>
 
-      <label for="psw" id="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-          
-      <button type="submit" id="login">Login</button>
-      <label>
+        <label for="psw" id="password">
+          <b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" id="login">Login</button>
+        <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+        </label>
+
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
+        <span class="psw">
+          <a href="#">Forgot password?</a>
+        </span>
       </div>
-  </form>
+    </form>
   </div>
 
   <!-- end modal -->
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <h2></h2>
-      </div>
-    </div>
-  </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-6 colMargin">
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem velit consequatur nostrum repellendus
+        <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem velit consequatur nostrum repellendus
           corporis architecto obcaecati doloremque dolorum, voluptatem saepe, perspiciatis, unde cumque! Repellat optio libero
           incidunt dicta consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, saepe laboriosam! Cumque,
           vel? Eos laboriosam maxime quidem ab eveniet tempore a unde aspernatur veritatis exercitationem. Doloremque blanditiis
