@@ -4,6 +4,7 @@ body {
 
 .navbar-default {
   background-color: #fff;
+  margin-bottom: 0;
 }
 
 .navbar-nav > ul > a {
@@ -13,11 +14,11 @@ body {
 #wemeet {
   font-size: 32px;
   font-family: "Pacifico", cursive;
-  color: rgb(204, 33, 33);
+  color: #f00;
 }
 
 #wemee:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
   color: white;
   font-size: 40px;
   position: absolute;
-  left: 34%;
+  left: 32%;
   top: 48%;
 }
 
@@ -38,33 +39,51 @@ h3 {
   top: 58%;
 }
 
-#loginbtn {
+#login-button {
   width: 280px;
   height: 50px;
   position: absolute;
   top: 70%;
-  left: 40%;
+  left: 39%;
   background-color: rgb(255, 96, 96);
   opacity: 1;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  outline: none;
 }
 
-#loginbtn:hover {
+#login-button2 {
+  width: auto;
+  background-color: rgb(255, 96, 96);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  outline: none;
+  position: absolute;
+  left: 45%;
+  top: -10%;
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+#login-button:hover {
   opacity: 1;
   background-color: rgb(204, 33, 33);
 }
 
 .box {
   position: relative;
-  height: 300px;
+  height: 350px;
   background-color: rgb(15, 23, 33);
   width: 100%;
 }
 
 #right-block {
-  width: 500px;
+  width: 35%;
   color: white;
   position: absolute;
   right: 5%;
@@ -72,7 +91,7 @@ h3 {
 }
 
 #left-block {
-  width: 500px;
+  width: 35%;
   color: white;
   position: absolute;
   left: 5%;
@@ -99,10 +118,7 @@ h2 {
   color: #fff;
   position: absolute;
   top: 10%;
-  left: 40%;
-
-  /* margin-bottom: 20px;
-  margin-top: 20px; */
+  left: 35%;
 }
 
 .nopadding {
@@ -115,10 +131,9 @@ h2 {
 }
 
 .mySlides {
-  height: 760px;
-  width: 1468px;
-  margin-top: -140px;
-  margin-left: -120px;
+  height: 100%;
+  width: 100%;
+
   position: relative;
   z-index: -1;
 }
@@ -130,7 +145,7 @@ h2 {
 }
 
 #p-img {
-  width: 550px;
+  width: 100%;
 }
 
 #user-img {
@@ -144,23 +159,27 @@ h2 {
 }
 
 #logo {
-  width: 350px;
+  width: 75px;
   position: absolute;
-  bottom: 1%;
-  left: -6%;
+  right: 5%;
+  top: 12%;
   animation-name: slide;
   animation-duration: 3s;
 }
 
+#logo:hover {
+  width: 100px;
+}
+
 @keyframes slide {
   0% {
-    left: -10%;
-    bottom: 1%;
+    right: -15%;
+    top: 12%;
   }
 
   100% {
-    left: -6%;
-    bottom: 1%;
+    right: 5%;
+    top: 12%;
   }
 }
 
@@ -210,10 +229,10 @@ h2 {
 /* restaurant box styling */
 
 .restaurant-box {
-  background-color: #FFF;
+  background-color: #fff;
   width: 400px;
   border: 10px solid;
-  border-color: #3CDBBC;
+  border-color: #3cdbbc;
   border-radius: 10px;
   padding: 25px;
   margin: 25px;
@@ -223,7 +242,7 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: #FC4349;
+  color: #fc4349;
 }
 
 .restaurant-type {
@@ -231,14 +250,14 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
-  color: #2C3E50;
+  color: #2c3e50;
 }
 
 .restaurant-description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  color: #2C3E50;
+  color: #2c3e50;
 }
 
 /* login form styling */
@@ -261,14 +280,17 @@ input[type="password"] {
 }
 
 button {
-  background-color: #4CCF51;
+  background-color: #4ccf51;
   color: white;
   padding: 10px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  width: 100%;
+}
+
+#login {
+  width: 49%;
 }
 
 button:hover {
@@ -281,52 +303,13 @@ red: #FC4349
 orange: #FFBB00
 teal: #3CDBBC */
 
-@media only screen and (max-width: 600px) {
-  #loginbtn {
-    width: 280px;
-    height: 50px;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    background-color: rgb(255, 96, 96);
-    opacity: 1;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
-
-  #logo {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  #loginbtn {
-    width: 280px;
-    height: 50px;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    background-color: rgb(255, 96, 96);
-    opacity: 1;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
-
-  #logo {
-    display: none;
-  }
-}
-
-
 /* login modal */
 
 /* styles for the cancel button */
 .cancelbtn {
-  width: auto;
+  width: 49%;
   padding: 10px 18px;
-  background-color: #FC4349;
+  background-color: #fc4349;
 }
 
 /* Center the logo and position the close button */
@@ -342,7 +325,6 @@ teal: #3CDBBC */
 
 span.psw {
   float: right;
-  padding-top: 16px;
 }
 
 /* The Modal (background) */
@@ -355,17 +337,17 @@ span.psw {
   width: 100%;
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -387,26 +369,85 @@ span.psw {
 /* Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
-          
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-      }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
-  display: block;
-  float: none;
+    display: block;
+    float: none;
   }
   .cancelbtn {
-  width: 100%;
+    width: 100%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  .modalcontainer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #login-button {
+    display: none;
+  }
+  #login-button2 {
+    display: block;
+  }
+
+  .modalcontainer {
+    padding: 20px;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #login-button {
+    display: none;
+  }
+  #login-button2 {
+    display: block;
+  }
+
+  .modalcontainer {
+    padding: 20px;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
   }
 }
