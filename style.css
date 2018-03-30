@@ -88,6 +88,10 @@ h2 {
   color: white;
   margin-top: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd8e7612e068e700ccd5b139a5fb46774f2f0ed4
 /* ________________________________________________________ */
 
 /* user profile styling */
@@ -105,7 +109,11 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
+<<<<<<< HEAD
   color: #fc4349;
+=======
+  color: #FC4349;
+>>>>>>> dd8e7612e068e700ccd5b139a5fb46774f2f0ed4
 }
 
 .user-description {
