@@ -14,6 +14,7 @@
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
   <title>WeMeet!</title>
 </head>
 
@@ -122,15 +123,15 @@
       </div>
 
       <div class="modalcontainer">
-        <label for="uname" id="email">
+        <label for="uname">
           <b>Email</b>
         </label>
-        <input type="email" placeholder="Enter Email Address" name="uname" required>
+        <input type="email" id="email" placeholder="Enter Email Address" name="uname" required>
 
-        <label for="psw" id="password">
+        <label for="psw">
           <b>Password</b>
         </label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
 
         <button type="submit" id="login">Login</button>
         <label>
