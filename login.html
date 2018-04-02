@@ -7,23 +7,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <meta name="google-signin-client_id" content="875238637086-cejr9ccmjdnu56j9de8ptdfgm6us26fl.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Tangerine|Ubuntu+Condensed" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
-   
+
     <script type="text/javascript" src="javascript.js"></script>
 
 
 
     <title>Login</title>
 </head>
+<style>
+    #profilephoto {
+        display: inline;
+        margin: 20px;
+    }
+
+    #username {
+        display: inline;
+        font-family: "Alfa Slab One", sans-serif;
+        color: #345;
+        font-size: 32px;
+        margin: 20px;
+    }
+
+    #bio {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    #post-login {
+        display: none;
+    }
+</style>
 
 <body>
 
-    <div class="container">
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="wemeet" href="index.html">WeMeet!</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="not-gmail-login" class="container">
         <div class="row">
 
             <div class="col-xs-6">
@@ -47,14 +106,18 @@
                         <label for="email">Email</label>
                         <input type="email" id="email1" placeholder="Enter Email" name="fname" required>
                         <label for="password">Password</label>
-                        <input type="password" id="password1"   placeholder="Enter Password" name="lname" required>
+                        <input type="password" id="password1" placeholder="Enter Password" name="lname" required>
                         <button type="submit" id="log_in">Log In</button>
                     </div>
 
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
-                    <BUTTON id="signout1">
+
+                    <BUTTON class="btn btn-danger" id="signout1">
                         Sign Out
                     </BUTTON>
+
+
 
 
 
@@ -63,15 +126,40 @@
             </div>
 
             <div id="putstuffhere1"></div>
-         
+
         </div>
     </div>
+
+    <div id="post-login" class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div>
+
+                    <img id="pic" class="img-circle" width="100" height="100" src="http://relocate.withwre.com/files/2017/01/generic-user-profile_354184.png"
+                        width="150px">
+                </div>
+                <p>User Name: </p>
+                <p id="email" class="alert alert-danger"></p>
+                <p id="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem velit consequatur nostrum repellendus
+                    corporis architecto obcaecati doloremque dolorum, voluptatem saepe, perspiciatis, unde cumque! Repellat
+                    optio libero incidunt dicta consequatur.</p>
+                <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+
+            </div>
+            <div class="col-xs-6">
+
+                (API stuff goes here)
+
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
 <!-- javascript -->
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
