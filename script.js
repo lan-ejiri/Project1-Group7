@@ -7,8 +7,7 @@ function onSignIn(googleUser) {
   $("#email").text(profile.getEmail());
   $("#login-nav").css("display", "none");
   $("#signup-nav").css("display", "none");
-  window.location.href = 'login.html';
-
+  window.location.replace = "https://lan-ejiri.github.io/Project1-Group7";
 }
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
