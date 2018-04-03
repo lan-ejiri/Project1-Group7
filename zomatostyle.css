@@ -16,7 +16,8 @@ header {
     font-weight: bold;
     padding: 5px 15px;
 }
-input, .input {
+/* input, .input { */
+.formWrapper .input {
     border: none;
     border-radius: 5px;
     font-size: 15px;
@@ -65,9 +66,12 @@ input, .input {
 .formWrapper {
     background-color: #cb202d;
     border-radius: 5px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 10px 25px;
-    width: 875px;
+    width: 100%;
+}
+.formWrapper form {
+    background-color: #cb202d;
 }
 .formWrapper span {
     color: white;
