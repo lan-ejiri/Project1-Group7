@@ -7,6 +7,8 @@ function onSignIn(googleUser) {
   $("#email").text(profile.getEmail());
   $("#login-nav").css("display", "none");
   $("#signup-nav").css("display", "none");
+    //window.location = 'asdasdasd.html';
+
 }
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
