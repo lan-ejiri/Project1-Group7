@@ -67,11 +67,12 @@ header {
     background-color: #cb202d;
     border-radius: 5px;
     /* margin: 0 auto; */
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
     width: 100%;
 }
 .formWrapper form {
     background-color: #cb202d;
+    padding: 10px 25px;
 }
 .formWrapper span {
     color: white;
@@ -83,9 +84,17 @@ header {
 .resultsWrapper {
     /* background-color: #cb202d;
     border-radius: 5px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 10px 25px;
-    width: 875px;
+    /* width: 875px; */
+}
+.resultsWrapper h2 {
+    text-align: unset;
+    font-size: unset;
+    font-family: unset;
+    position: unset;
+    top: unset;
+    left: unset;
 }
 .venues {
     background-color: white;
