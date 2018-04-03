@@ -39,6 +39,12 @@ h3 {
   top: 58%;
 }
 
+a:hover {
+  font-size: 25px !important;
+  cursor: pointer !important;
+  color: red !important;
+}
+
 #login-button {
   width: 280px;
   height: 50px;
@@ -277,16 +283,6 @@ input[type="password"] {
   display: inline-block;
   border: 1px solid #2c3e50;
   border-radius: 10px;
-}
-
-button {
-  background-color: #4ccf51;
-  color: white;
-  padding: 10px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
 #login {
