@@ -16,7 +16,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>    
+    <script type="text/javascript" src="callinginfo.js"></script>
+
 
 
     <!-- <script type="text/javascript" src="javascript.js"></script> -->
@@ -99,6 +101,30 @@
                 <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
 
             </div>
+            <div class="col-xs-6">
+                <div class="inputthing">
+                    <h4>Please input a username and city so we can match you with others in your area</h4>
+                    <div id="makethisdisappear">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Please enter a username" name="uname" id="usernameinput" required>
+                        <br>
+                        <label for="uname">
+                            <b>City</b>
+                        </label>
+                        <input type="text" placeholder="Please enter city name" name="uname" id="cityinput" required>
+                        <br>
+                        <button type="submit" id="buttonthing">Submit</button>
+                    </div>
+
+                    <button id="showshit" style = 'display: none'>Show Users in my Area</button>
+                </div>
+                <div id="testingstuff"> </div>
+            </div>
+
+
+
         </div>
         <div class="row">
             <div class="col-xs-12">
@@ -107,12 +133,13 @@
                 <div class="formWrapper">
                     <form>
                         <span>zomato</span>
-                        <input type="text" name="city" id="city-input" placeholder="Enter a city...">
+                        <input type="text" name="city" id="city-input" class="input" placeholder="Enter a city...">
                         <!-- <input type="text" name="cuisine" id="cuisine-input" placeholder="Please select a cuisine..."> -->
                         <select id="cuisine-input" class="input">
                             <option value="null" selected disabled>Choose a cuisine...</option>
                         </select>
                         <button type="submit" class="api-call">Submit</button>
+                        <button type="submit" id="resetButton">Reset</button>
                     </form>
                 </div>
                 <div class="resultsWrapper">
@@ -122,6 +149,7 @@
 
             </div>
         </div>
+
     </div>
 
 

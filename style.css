@@ -106,6 +106,8 @@ input {
 
 p {
   font-family: "Ubuntu Condensed", sans-serif;
+  line-height: 26px;
+  font-size: 20px;
 }
 
 h4 {
