@@ -20,8 +20,8 @@ $(document).ready(function () {
 
     $("#buttonthing").click(function () {
 
-        newUserCity = $("#cityinput").val();
-        newUserId = $("#usernameinput").val();
+        newUserCity = $("#cityinput").val().trim();
+        newUserId = $("#usernameinput").val().trim();
 
         database.ref().push({
 
