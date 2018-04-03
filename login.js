@@ -12,11 +12,6 @@ function onSignIn(googleUser) {
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut().then(function() {
-    $("#login-nav").css("display", "block");
-    $("#signup-nav").css("display", "block");
-    alert("You have been successfully signed out");
-    $(".g-signin2").css("display", "block");
-    $("#not-gmail-login").css("display", "block");
-    $("#post-login").css("display", "none");
+    window.location.href = "index.html";
   });
 }
