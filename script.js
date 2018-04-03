@@ -10,7 +10,8 @@ function onSignIn(googleUser) {
 }
 
 function onSignIn(googleUser) {
-  window.location.replace = "https://lan-ejiri.github.io/Project1-Group7";
+  window.location.replace =
+    "https://lan-ejiri.github.io/Project1-Group7/login.html";
   return;
 }
 
