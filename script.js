@@ -1,19 +1,17 @@
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  $(".g-signin2").css("display", "none");
-  $("#not-gmail-login").css("display", "none");
-  $("#post-login").css("display", "block");
-  $("#pic").attr("src", profile.getImageUrl());
-  $("#email").text(profile.getEmail());
-  $("#login-nav").css("display", "none");
-  $("#signup-nav").css("display", "none");
+  // $(".g-signin2").css("display", "none");
+  // $("#not-gmail-login").css("display", "none");
+  // $("#post-login").css("display", "block");
+  // $("#pic").attr("src", profile.getImageUrl());
+  // $("#email").text(profile.getEmail());
+  // $("#login-nav").css("display", "none");
+  // $("#signup-nav").css("display", "none");
 }
 
 function onSignIn(googleUser) {
-  window.location.assign(
-    "https://lan-ejiri.github.io/Project1-Group7/login.html"
-  );
-  return;
+  window.location.replace("login.html");
+  return 0;
 }
 
 function signOut() {
