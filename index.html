@@ -9,6 +9,8 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Tangerine|Ubuntu+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="google-signin-client_id" content="875238637086-cejr9ccmjdnu56j9de8ptdfgm6us26fl.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css">
@@ -17,6 +19,7 @@
   <script type="text/javascript" src="javascript.js"></script>
   <title>WeMeet!</title>
 </head>
+
 
 <body>
   <nav class="navbar navbar-default">
@@ -97,6 +100,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
+
   <img id="logo" src="assets/images/Logo.png">
 
   <div>
@@ -112,107 +116,107 @@
 
   <!-- modal login button -->
 
-  <button onclick="document.getElementById('id01').style.display='block'" id="login-button">Login</button>
+  <div id="login-button" class="g-signin2" data-width="280" data-height="50">
 
-  <div id="id01" class="modal">
+    <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="assets/images/Logo.png" alt="WeMeet">
-      </div>
-
-      <div class="modalcontainer">
-        <label for="uname">
-          <b>Email</b>
-        </label>
-        <input type="email" id="email" placeholder="Enter Email Address" name="uname" required>
-
-        <label for="psw">
-          <b>Password</b>
-        </label>
-        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit" id="login">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
-        <span class="psw">
-          <a href="#">Forgot password?</a>
-        </span>
-      </div>
-    </form>
-  </div>
-
-  <!-- end modal -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 colMargin">
-        <br>
-        <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem velit consequatur nostrum repellendus
-          corporis architecto obcaecati doloremque dolorum, voluptatem saepe, perspiciatis, unde cumque! Repellat optio libero
-          incidunt dicta consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, saepe laboriosam! Cumque,
-          vel? Eos laboriosam maxime quidem ab eveniet tempore a unde aspernatur veritatis exercitationem. Doloremque blanditiis
-          optio exercitationem ab.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aut a distinctio, odit omnis fuga sint eius laudantium
-          voluptate architecto placeat volupt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quis placeat
-          optio eaque amet perferendis cumque voluptates rem sapiente corrupti, tempora sunt, iure consequatur fuga. Eaque
-          quos voluptatem animi nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam mollitia sint soluta
-          molestias beatae repellat provident fuga perspiciatis atque deserunt libero, laboriosam nesciunt assumenda, dicta
-          quibusdam quod nihil iusto molestiae? as exercitationem aspernatur alias. Illo harum atque itaque tempora!</p>
-      </div>
-
-      <div class="col-md-6 colMargin">
-        <img id="p-img" src="https://c.stocksy.com/a/tyK000/z0/80655.jpg ">
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 nopadding box colMargin">
-        <h2>How it works...</h2>
-        <div id="left-block">
-          <h4>Sign Up!
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-          </h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aliquam laboriosam magni nostrum iure, magnam, omnis
-            cumque, ad nemo eius eligendi quod molestiae doloremque ea optio necessitatibus sunt sed modi?
-          </p>
-          <a class="signUpLink" href="#">Sign Up
-            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-          </a>
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="assets/images/Logo.png" alt="WeMeet">
         </div>
-        <div id="right-block">
-          <h4>Connect!
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          </h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aliquam laboriosam magni nostrum iure, magnam, omnis
-            cumque, ad nemo eius eligendi quod molestiae doloremque ea optio necessitatibus sunt sed modi?
-          </p>
+
+        <div class="modalcontainer">
+          <label for="uname">
+            <b>Email</b>
+          </label>
+          <input type="email" id="email" placeholder="Enter Email Address" name="uname" required>
+
+          <label for="psw">
+            <b>Password</b>
+          </label>
+          <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" id="login">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
+          <span class="psw">
+            <a href="#">Forgot password?</a>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    <!-- end modal -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 colMargin">
+          <br>
+          <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem velit consequatur nostrum repellendus
+            corporis architecto obcaecati doloremque dolorum, voluptatem saepe, perspiciatis, unde cumque! Repellat optio
+            libero incidunt dicta consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, saepe laboriosam!
+            Cumque, vel? Eos laboriosam maxime quidem ab eveniet tempore a unde aspernatur veritatis exercitationem. Doloremque
+            blanditiis optio exercitationem ab.</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aut a distinctio, odit omnis fuga sint eius laudantium
+            voluptate architecto placeat volupt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quis placeat
+            optio eaque amet perferendis cumque voluptates rem sapiente corrupti, tempora sunt, iure consequatur fuga. Eaque
+            quos voluptatem animi nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam mollitia sint
+            soluta molestias beatae repellat provident fuga perspiciatis atque deserunt libero, laboriosam nesciunt assumenda,
+            dicta quibusdam quod nihil iusto molestiae? as exercitationem aspernatur alias. Illo harum atque itaque tempora!</p>
+        </div>
+
+        <div class="col-md-6 colMargin">
+          <img id="p-img" src="https://c.stocksy.com/a/tyK000/z0/80655.jpg ">
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores delectus fugiat eum quibusdam pariatur enim!
-          Fuga, tempora ipsa veniam ea ratione quas earum blanditiis consectetur iste quam accusantium corrupti? Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Magni assumenda illo minus, molestias reprehenderit deleniti harum
-          perspiciatis earum sit quaerat ducimus modi a beatae aliquam recusandae, accusamus nihil! Eos, nihil. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Error at porro quis autem totam. Ipsam cumque sapiente ea quo eius
-          pariatur exercitationem numquam corrupti tempora? Quae laborum saepe id consequatur.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 nopadding box colMargin">
+          <h2>How it works...</h2>
+          <div id="left-block">
+            <h4>Sign Up!
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aliquam laboriosam magni nostrum iure, magnam, omnis
+              cumque, ad nemo eius eligendi quod molestiae doloremque ea optio necessitatibus sunt sed modi?
+            </p>
+            <a class="signUpLink" href="#">Sign Up
+              <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="right-block">
+            <h4>Connect!
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aliquam laboriosam magni nostrum iure, magnam, omnis
+              cumque, ad nemo eius eligendi quod molestiae doloremque ea optio necessitatibus sunt sed modi?
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores delectus fugiat eum quibusdam pariatur
+            enim! Fuga, tempora ipsa veniam ea ratione quas earum blanditiis consectetur iste quam accusantium corrupti?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni assumenda illo minus, molestias reprehenderit
+            deleniti harum perspiciatis earum sit quaerat ducimus modi a beatae aliquam recusandae, accusamus nihil! Eos,
+            nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at porro quis autem totam. Ipsam cumque
+            sapiente ea quo eius pariatur exercitationem numquam corrupti tempora? Quae laborum saepe id consequatur.</p>
+        </div>
+      </div>
+    </div>
 
 </body>
 
