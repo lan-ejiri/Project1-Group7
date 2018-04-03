@@ -9,14 +9,18 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Tangerine|Ubuntu+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="google-signin-client_id" content="875238637086-cejr9ccmjdnu56j9de8ptdfgm6us26fl.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
   <title>WeMeet!</title>
 </head>
+
 
 <body>
   <nav class="navbar navbar-default">
@@ -32,6 +36,7 @@
           <span class="icon-bar"></span>
         </button>
         <a id="wemeet" href="index.html">WeMeet!</a>
+        <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
 
         <!-- login button to apear on navbar for mobile displays -->
 
@@ -97,6 +102,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
+
   <img id="logo" src="assets/images/Logo.png">
 
   <div>
@@ -110,43 +116,9 @@
     <h3> Making New Friends</h3>
   </div>
 
-  <!-- modal login button -->
 
-  <button onclick="document.getElementById('id01').style.display='block'" id="login-button">Login</button>
+  <div id="login-button" class="g-signin2" data-onsuccess="onSignIn" data-width="280" data-height="50"></div>
 
-  <div id="id01" class="modal">
-
-    <form class="modal-content animate" action="/action_page.php">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="assets/images/Logo.png" alt="WeMeet">
-      </div>
-
-      <div class="modalcontainer">
-        <label for="uname">
-          <b>Email</b>
-        </label>
-        <input type="email" id="email" placeholder="Enter Email Address" name="uname" required>
-
-        <label for="psw">
-          <b>Password</b>
-        </label>
-        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit" id="login">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
-        <span class="psw">
-          <a href="#">Forgot password?</a>
-        </span>
-      </div>
-    </form>
-  </div>
-
-  <!-- end modal -->
 
   <div class="container">
     <div class="row">
@@ -222,7 +194,6 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-<!-- javascript -->
-<script type="text/javascript" src="app.js"></script>
+
 
 </html>
