@@ -9,6 +9,11 @@ function onSignIn(googleUser) {
   $("#signup-nav").css("display", "none");
 }
 
+function onSignIn(googleUser) {
+  window.location.replace = "https://lan-ejiri.github.io/Project1-Group7";
+  return;
+}
+
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut().then(function() {
