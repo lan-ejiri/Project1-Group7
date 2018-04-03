@@ -15,8 +15,7 @@
   <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+
   <title>WeMeet!</title>
 </head>
 
@@ -35,64 +34,13 @@
           <span class="icon-bar"></span>
         </button>
         <a id="wemeet" href="index.html">WeMeet!</a>
-        <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
-
-        <!-- login button to apear on navbar for mobile displays -->
-
-        <button onclick="document.getElementById('id01').style.display='block'" id="login-button2">Login</button>
-
-        <div id="id01" class="modal">
-
-          <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="assets/images/Logo.png" alt="WeMeet" width="150">
-            </div>
-
-            <div class="modalcontainer">
-              <label for="uname" id="email">
-                <b>Email</b>
-              </label>
-              <input type="email" placeholder="Enter Email Address" name="uname" required>
-
-              <label for="psw" id="password">
-                <b>Password</b>
-              </label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-              <div>
-                <button type="submit" id="login">Login</button>
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="cancel">Cancel</button>
-              </div>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-
-
-              <span class="psw">
-                <a href="#">Forgot password?</a>
-              </span>
-            </div>
-          </form>
-        </div>
-
       </div>
-      <!-- 
-      <h1>WeMeet!</h1> -->
-
-
-
-
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="login.html">Login</a>
+            <a id="about-us">About us!</a>
           </li>
-
-
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -110,7 +58,7 @@
 
     <h1>Meeting New People</h1>
 
-    <h3> Making New Friends</h3>
+    <h3>Making New Friends</h3>
   </div>
 
 
@@ -121,11 +69,18 @@
     <div class="row">
       <div class="col-md-6 colMargin">
         <br>
-        <p id="p">Here at WeMeet, we have a passion for connecting people based upon common interests. Using WeMeet, you can find other locals in your area and make new friends. Based upon your location and interests, find great local restaurants to dine at, and interesting people in your area to dine with!</p>
+        <p id="p">Here at WeMeet, we have a passion for connecting people based upon common interests. Using WeMeet, you can find other
+          locals in your area and make new friends. Based upon your location and interests, find great local restaurants
+          to dine at, and interesting people in your area to dine with!</p>
 
+<<<<<<< HEAD
+        <p>Connect instantly using your Google account to get started. Once you sign in, simply choose your favorite types of
+          food from our extensive list, and instantly find other people in your area with similar tastes!</p>
+=======
         <p>Connect instantly using your Google account to get started. Once you sign in, simply choose your favorite types of food from our extensive list, and instantly find other people in your area with similar tastes!</p>
       
         <p>Get started today and meet some friendly people near you!</p>
+>>>>>>> master
       </div>
 
       <div class="col-md-6 colMargin">
@@ -143,7 +98,8 @@
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
           </h4>
           <p>
-              Connect instantly using your Google account to get started. Once you sign in, simply choose your favorite types of food from our extensive list, and instantly find other people in your area with similar tastes!
+            Connect instantly using your Google account to get started. Once you sign in, simply choose your favorite types of food from
+            our extensive list, and instantly find other people in your area with similar tastes!
           </p>
         </div>
         <div id="right-block">
@@ -151,7 +107,8 @@
             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
           </h4>
           <p>
-              Using WeMeet, you can find other locals in your area and make new friends. Based upon your location and interests, find great local restaurants to dine at, and interesting people in your area to dine with!
+            Using WeMeet, you can find other locals in your area and make new friends. Based upon your location and interests, find great
+            local restaurants to dine at, and interesting people in your area to dine with!
           </p>
         </div>
       </div>
@@ -174,6 +131,8 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 
 </html>
