@@ -20,8 +20,6 @@ $(document).ready(function () {
 
     $("#buttonthing").click(function () {
 
-
-
         newUserCity = $("#cityinput").val();
         newUserId = $("#usernameinput").val();
 
@@ -37,7 +35,8 @@ $(document).ready(function () {
         });
 
         $("#makethisdisappear").empty();
-        
+        $("#showshit").attr('style','display: block')
+
     }); //buttonclick close
 
     //on click of "show people" button
