@@ -19,6 +19,9 @@ $(document).ready(function () {
     var userArray;
 
     $("#buttonthing").click(function () {
+
+
+
         newUserCity = $("#cityinput").val();
         newUserId = $("#usernameinput").val();
 
@@ -33,7 +36,8 @@ $(document).ready(function () {
             // An error happened.
         });
 
-
+        $("#makethisdisappear").empty();
+        
     }); //buttonclick close
 
     //on click of "show people" button
