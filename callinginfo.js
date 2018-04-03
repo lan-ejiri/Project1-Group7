@@ -44,7 +44,7 @@ $(document).ready(function () {
         var ref = firebase.database().ref();
         $(".inputthing").empty();
 
-        ref.orderByChild("city").equalTo("test").on("child_added", function (snapshot) {
+        ref.orderByChild("city").equalTo(newUserCity).on("child_added", function (snapshot) {
             // console.log(snapshot.val().id);
             userArray = snapshot.val().id;
             console.log(userArray);
