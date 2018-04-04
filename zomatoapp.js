@@ -17,6 +17,7 @@ $(document).ready(function () {
         $("#city-input").empty();
         $(".resultsWrapper").empty();
         $("#city-input").val("");
+        $("#cuisine-input").css("display", "none");
         
     });
     
