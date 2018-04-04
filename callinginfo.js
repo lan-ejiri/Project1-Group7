@@ -48,20 +48,20 @@ $(document).ready(function () {
             // console.log(snapshot.val().id);
             userArray = snapshot.val().id;
             $("#testingstuff").append("<div><button class= 'butt' id =" + snapshot.key + ">" + snapshot.val().id + "</button></div>");
-
+            console.log("buttons are done");
         });
 
     });
 
 
-    $(".butt").click(function () {
-        
+    $(document).on("click", ".butt", function () {
+
+
         var buttId = $(this).attr('id');
         console.log(buttId);
-        alert("user clicked!");
 
         $("#testingstuff").empty();
-        $("#testingstuff").text(buttId);
+        $("#testingstuff").html("<h4 style = 'text align: center'>" + buttId + "</h4><h5> at the moment this is showing the user's 'unique id' but if this app was actually deployed it would probably show some sort of profile or contact information that the user opted to share </h5>" );
 
     }); //closing button click function
 
