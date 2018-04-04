@@ -11,9 +11,12 @@ $(document).ready(function () {
     var cityId;
 
     $(document).on("click", "#resetButton", function(event) {
+
+        event.preventDefault();
         $("#cuisine-input").empty();
         $("#city-input").empty();
         $("#hits").empty();
+        
     });
     
     $(document).on("click", ".api-call", function (event) {
