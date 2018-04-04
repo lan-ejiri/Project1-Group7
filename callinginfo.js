@@ -35,7 +35,7 @@ $(document).ready(function () {
         });
 
         $("#makethisdisappear").empty();
-        $("#showshit").attr('style','display: block')
+        $("#showshit").attr('style', 'display: block')
 
     }); //buttonclick close
 
@@ -47,11 +47,22 @@ $(document).ready(function () {
         ref.orderByChild("city").equalTo(newUserCity).on("child_added", function (snapshot) {
             // console.log(snapshot.val().id);
             userArray = snapshot.val().id;
-            console.log(userArray);
-            $("#testingstuff").append("<div><button id =" + snapshot.key + ">" + snapshot.val().id + "</button></div>");
-
+            $("#testingstuff").append("<div><button class= 'butt' id =" + snapshot.key + ">" + snapshot.val().id + "</button></div>");
+            console.log("buttons are done");
         });
 
     });
 
-});//docutment ready close  
+
+    $(document).on("click", ".butt", function () {
+
+
+        var buttId = $(this).attr('id');
+        console.log(buttId);
+
+        $("#testingstuff").empty();
+        $("#testingstuff").html("<h4 style = 'text align: center'>" + buttId + "</h4><h5> at the moment this is showing the user's 'unique id' but if this app was actually deployed it would probably show some sort of profile or contact information that the user opted to share </h5>" );
+
+    }); //closing button click function
+
+});//document ready close  
