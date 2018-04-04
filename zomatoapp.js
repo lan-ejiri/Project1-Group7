@@ -15,7 +15,8 @@ $(document).ready(function () {
         event.preventDefault();
         $("#cuisine-input").empty();
         $("#city-input").empty();
-        $("#hits").empty();
+        $(".resultsWrapper").empty();
+        $("#city-input").text("");
         
     });
     
