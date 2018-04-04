@@ -115,6 +115,9 @@ h4 {
   text-align: center;
 }
 
+a span {
+  line-height: 2;
+}
 span {
   color: #0ac;
 }
