@@ -35,7 +35,7 @@ $(document).ready(function () {
         });
 
         $("#makethisdisappear").empty();
-        $("#showshit").attr('style','display: block')
+        $("#showshit").attr('style', 'display: block')
 
     }); //buttonclick close
 
@@ -47,11 +47,22 @@ $(document).ready(function () {
         ref.orderByChild("city").equalTo(newUserCity).on("child_added", function (snapshot) {
             // console.log(snapshot.val().id);
             userArray = snapshot.val().id;
-            console.log(userArray);
-            $("#testingstuff").append("<div><button id =" + snapshot.key + ">" + snapshot.val().id + "</button></div>");
+            $("#testingstuff").append("<div><button class= 'butt' id =" + snapshot.key + ">" + snapshot.val().id + "</button></div>");
 
         });
 
     });
 
-});//docutment ready close  
+
+    $(".butt").click(function () {
+        
+        var buttId = $(this).attr('id');
+        console.log(buttId);
+        alert("user clicked!");
+
+        $("#testingstuff").empty();
+        $("#testingstuff").text(buttId);
+
+    }); //closing button click function
+
+});//document ready close  
