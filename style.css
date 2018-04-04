@@ -129,6 +129,11 @@ h2 {
   left: 35%;
 }
 
+#search {
+  font-size: 150px;
+  margin-left: 200px;
+}
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
@@ -169,6 +174,16 @@ h2 {
   position: absolute;
   top: 40%;
   left: 25%;
+}
+
+#connect {
+  margin-top: 20px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #sign-out-login {
@@ -287,10 +302,17 @@ form {
   margin-top: 20px;
 }
 
+#sign-out-index {
+  margin-left: 400px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
 #buttonthing {
   text-align: center;
   margin-left: 200px;
   width: 150px;
+  margin-top: 24px;
 }
 
 input[type="email"],
