@@ -39,7 +39,7 @@ h3 {
   top: 58%;
 }
 
-a:hover {
+#about-us:hover {
   font-size: 25px !important;
   cursor: pointer !important;
   color: red !important;
@@ -156,6 +156,11 @@ h2 {
   width: 100%;
 }
 
+#pic {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
 #user-img {
   width: 300px;
 }
@@ -164,6 +169,11 @@ h2 {
   position: absolute;
   top: 40%;
   left: 25%;
+}
+
+#sign-out-login {
+  margin-left: 200px;
+  width: 150px;
 }
 
 #logo {
@@ -274,6 +284,13 @@ form {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
+  margin-top: 20px;
+}
+
+#buttonthing {
+  text-align: center;
+  margin-left: 200px;
+  width: 150px;
 }
 
 input[type="email"],

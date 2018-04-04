@@ -7,6 +7,7 @@ function onSignIn(googleUser) {
   $("#email").text(profile.getEmail());
   $("#login-nav").css("display", "none");
   $("#signup-nav").css("display", "none");
+  $("#welcome").text(profile.getEmail());
 }
 
 function signOut() {
